@@ -1,0 +1,133 @@
+* { margin: 0px; padding: 0px; }
+	
+body {
+	background-color: #fff;
+	}
+
+
+li {
+	font-family: Arial, Helvetica, sans-serif;
+	font-weight: bold;
+	color: #85898A;
+	text-align: right;
+	font-size: 12px;
+	margin-bottom: 10px;
+	margin-left: 10px;
+	list-style-type: none;
+	}
+			
+	li a:link {
+		color:#85898A; 
+		text-decoration: none;
+		} 
+	li a:visited {
+		color:#85898A; 
+		text-decoration: none;
+		} 
+	li a:hover {
+		color:#F20017; 
+		text-decoration: none;
+		} 
+	li a:active {
+		color:#F20017; 
+		text-decoration: none;
+		}
+
+h1 {
+	font-family: Arial, Helvetica, sans-serif;
+	color: #85898A;
+	font-size: 12px;
+	text-align: left; 
+	margin-bottom: 8px;
+	}
+	
+h2 {
+	font-family: Arial, Helvetica, sans-serif;
+	color: #85898A;
+	font-size: 12px;
+	text-align: left; 
+	margin-bottom: 4px;
+	}
+			
+p {
+	font-family: Arial, Helvetica, sans-serif;
+	color: #85898A;
+	font-size: 12px;
+	line-height: 18px;
+	text-align: left; 
+	margin-bottom: 10px;
+	}
+	
+	p a:link {
+		color: #85898A; 
+		text-decoration: underline;
+		} 
+	p a:visited {
+		color:#85898A; 
+		text-decoration: underline;
+		} 
+	p a:hover {
+		color:#F20017; 
+		text-decoration: none;
+		} 
+	p a:active {
+		color:#F20017; 
+		text-decoration: none;
+		}	
+		
+				
+#newsHeader {
+		width: 600px;
+		margin-right: auto;
+		margin-left: auto;
+		}
+
+#newsMenu {
+		width: 650px;
+		position: relative;
+		margin-top: -25px;
+		margin-right: auto;
+		padding-right: 75px;
+		margin-left: auto;
+		padding-left: 75px;
+		}
+		
+	#menu ul {
+		float: right;
+		}
+		
+	#menu li {
+		display: inline;
+		}		
+
+#newsMiddle {
+		width: 450px;
+		margin-top: 25px;
+		margin-right: auto;
+		margin-left: auto;
+		padding-right: 75px;
+		padding-left: 75px;
+		background-color: #ffffff;
+
+		}
+
+#newsFooter {
+		width: 600px;
+		margin-top: 25px;
+		margin-right: auto;
+		margin-left: auto;
+		}
+
+#copyright {
+		width: 600px;
+		margin-top: 10px;
+		margin-right: auto;
+		margin-left: auto;
+		}
+	
+	#copyright p {
+		font-size: 9px;
+		text-align: center;
+		}
+		
+/* ©2006 PREMIUM DESIGN WORKS  */

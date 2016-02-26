@@ -1,0 +1,93 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>Premium Design Works - Web</title>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+
+	<!-- Begin JavaScript -->
+	<script language="JavaScript" type="text/javascript">
+	
+	myPix = new Array("images/www_barbacoa.jpg","images/www_jetcity.jpg","images/www_ldc.jpg","images/www_revolution.jpg", "images/www_spivak.jpg", "images/www_whisperingmusicvenue.jpg","images/www_emersonkennedy.jpg","images/www_dns.jpg")
+
+	myLinx = new Array("premiumdw.com/barbacoa", "jetcityimprov.com/", "lemleydesign.com/", "premiumdw.com/revolution/home.php", "spainspivak.com", "premiumdw.com/whisperingmusicvenue","premiumdw.com/emersonkennedy", "premiumdw.com/dns.html")
+
+	myClienz = new Array("Barbacoa Restaurant","Jet City Improv", "Lemley Design Company", "Revolution: Dynamic Publishing", "Spain Spivak","The Whispering Music Venue","Emerson Kennedy","Microsoft")
+
+	myProjx = new Array("Website Design &amp; Development","Website Design &amp; Development", "Website Development", "Website Development", "Website Design &amp; Development","Website Design &amp; Development", "Website Design &amp; Development","Training Application Development")
+
+	thisPic = 0
+	
+	imgCt = myPix.length - 1 
+
+		function chgSlide(direction) { 
+			
+			if (document.getElementById) {
+			
+				thisPic = thisPic + direction
+				
+				if (thisPic > imgCt) {
+					
+					thisPic = 0
+				
+				}
+				
+				if (thisPic < 0) {
+				
+					thisPic = imgCt
+					
+				}
+				
+			}
+			
+			document.getElementById("myPicture").src = myPix[thisPic];
+			document.getElementById("myClient").innerHTML = myClienz[thisPic];
+			document.getElementById("myProject").innerHTML = myProjx[thisPic]; 
+		}
+
+		function viewURL() {
+			
+			view = window.open("http://www." + myLinx[thisPic],"myView","width=800,height=600,scrollbars=yes,resizable=yes");
+		
+			view.focus();
+		
+			}
+
+	</script>
+	<!-- End JavaScript -->
+
+	<!-- Begin Style Sheet -->
+	<link href="http://www.premiumdw.com/styles/school.css" rel="stylesheet" type="text/css" />
+	<!-- End Style Sheet -->
+
+</head>
+
+<body>
+
+
+		<!-- Begin Slideshow -->
+		<div id="slideshow" style="margin: 50px; width: 300px;">
+			
+			<h1>Websites</h1>
+			
+			<!-- Begin Image -->
+			<div id="image">
+				<a href="javascript:viewURL()"><img src="images/www_barbacoa.jpg" id="myPicture" alt="Premium Design Works Websites" border="0" /></a>
+			</div>
+			<!-- End Image -->
+			
+			<!-- Begin Controls -->
+			<div id="controls">
+				<dl style="float: right;"><a href="javascript:chgSlide(1)">next</a></dl>
+				<dl><a href="javascript:chgSlide(-1)">back</a></dl>
+				<h2 id="myClient">Barbacoa Restaurant</h2>
+				<p id="myProject">Website Design &amp; Development</p>
+			</div>
+			<!-- End Controls -->
+
+		</div>
+		<!-- End Slideshow -->
+		
+		
+			
+</body>
+</html>

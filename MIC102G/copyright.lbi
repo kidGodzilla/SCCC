@@ -1,0 +1,1 @@
+<p>	<script language="JavaScript" type="text/javascript">			now = new Date				document.write("&copy; 1994 - " + now.getFullYear() + " Premium Design Works. All Rights Reserved.")		</script></p>
